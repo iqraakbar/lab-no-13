@@ -1,0 +1,17 @@
+var MUET_MAP=[
+	{"department":"Architecture","latitude":"25.456789","longitude":"68.908765"},
+	{"department":"Biomedical Engineering","latitude":"25.786546","longitude":"68.987656"},
+	{"department":"CRP","latitude":"25,476890","longitude":"68.908976"},
+	{"department":"Civil Engineering","latitude":"25.875643","longitude":"68.908765"},
+	{"department":"Electrical Engineering","latitude":"25.786546","longitude":"68.262220"},
+	{"department":"Electronics Engineering","latitude":"25.786546","longitude":"68.908765"},
+	{"department":"Environmental","latitude":"25.786546","longitude":"68.908765"},
+	{"department":"Industrial Engineering","latitude":"25.404954","longitude":"68.259099"},
+	{"department":"Metallurgy","latitude":"25.786546","longitude":"68.908765"},
+	{"department":"Mining","latitude":"25.786546","longitude":"68.908765"},
+	{"department":"Mechanical Engineering","latitude":"25.875643","longitude":"68.987656"},
+	{"department":"Petroleum","latitude":"25.786546","longitude":"68.908765"},
+	{"department":"Software","latitude":"25.404491","longitude":"68.262220"},
+	{"department":"Telecommunication","latitude":"25.407011","longitude":"68.263684"},
+	{"department":"Textile","latitude":"25,476890","longitude":"68.262220"},
+	{"department":"Computer System","latitude":"25.407011","longitude":"68.262220"}];
