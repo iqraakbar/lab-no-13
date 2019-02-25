@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE muet
+[
+<!ELEMENT muet (faculty+,Student)>
+<!ATTLIST muet
+  xmlns CDATA #FIXED ''
+  department NMTOKEN #REQUIRED>
+
+<!ELEMENT faculty (#PCDATA)>
+<!ATTLIST faculty
+  xmlns CDATA #FIXED ''
+  Designation CDATA #REQUIRED>
+
+<!ELEMENT Student (name,roll_no,batch)>
+<!ATTLIST Student
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT roll_no (#PCDATA)>
+<!ATTLIST roll_no
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT batch (#PCDATA)>
+<!ATTLIST batch
+  xmlns CDATA #FIXED ''>
+  ]>
+ <!--  xml schema -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="muet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="faculty"/>
+        <xs:element ref="Student"/>
+      </xs:sequence>
+      <xs:attribute name="department" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="faculty">
+    <xs:complexType mixed="true">
+      <xs:attribute name="Designation" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element ref="roll_no"/>
+        <xs:element ref="batch"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name" type="xs:NCName"/>
+  <xs:element name="roll_no" type="xs:NMTOKEN"/>
+  <xs:element name="batch" type="xs:integer"/>
+</xs:schema>
+<!-- end xml schema -->
+<muet department = "Software">
+	    <faculty Designation = "Chairman">
+			Dr Naeem
+		</faculty>
+		<faculty Designation = "Vice Chairman">
+			Dr Mohsin
+		</faculty>
+		<faculty Designation = "Lecturer">
+			Ma'am Rabbeea
+		</faculty>
+		<Student>
+			<name>Iqra Akbar</name>
+			<roll_no>16SW166</roll_no> 
+			<batch>16</batch>
+		</Student>
+	</muet>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="ISO-8859-1"?>
+ <!DOCTYPE CV
+[
+<!ELEMENT CV (Personal_Details,Objective,Education,Work_Experience,
+              Skills,Strength,Achievement,Personal_Qualities,Hobby,
+              Reference)>
+<!ATTLIST CV
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Personal_Details (email,phone,address)>
+<!ATTLIST Personal_Details
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Objective (#PCDATA)>
+<!ATTLIST Objective
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Education (current,previous)>
+<!ATTLIST Education
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Work_Experience (#PCDATA)>
+<!ATTLIST Work_Experience
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Skills (Computer_Skills)>
+<!ATTLIST Skills
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Strength (#PCDATA)>
+<!ATTLIST Strength
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Achievement (#PCDATA)>
+<!ATTLIST Achievement
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Personal_Qualities (#PCDATA)>
+<!ATTLIST Personal_Qualities
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Hobby (#PCDATA)>
+<!ATTLIST Hobby
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Reference (#PCDATA)>
+<!ATTLIST Reference
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT current (#PCDATA)>
+<!ATTLIST current
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT previous (#PCDATA)>
+<!ATTLIST previous
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Computer_Skills (#PCDATA)>
+<!ATTLIST Computer_Skills
+  xmlns CDATA #FIXED ''>
+ ]>
+<!--  xml schema -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="CV">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Personal_Details"/>
+        <xs:element ref="Objective"/>
+        <xs:element ref="Education"/>
+        <xs:element ref="Work_Experience"/>
+        <xs:element ref="Skills"/>
+        <xs:element ref="Strength"/>
+        <xs:element ref="Achievement"/>
+        <xs:element ref="Personal_Qualities"/>
+        <xs:element ref="Hobby"/>
+        <xs:element ref="Reference"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Personal_Details">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="email"/>
+        <xs:element ref="phone"/>
+        <xs:element ref="address"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="email" type="xs:string"/>
+  <xs:element name="phone" type="xs:integer"/>
+  <xs:element name="address" type="xs:string"/>
+  <xs:element name="Objective" type="xs:string"/>
+  <xs:element name="Education">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="current"/>
+        <xs:element ref="previous"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="current" type="xs:string"/>
+  <xs:element name="previous" type="xs:string"/>
+  <xs:element name="Work_Experience" type="xs:string"/>
+  <xs:element name="Skills">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Computer_Skills"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Computer_Skills" type="xs:string"/>
+  <xs:element name="Strength" type="xs:string"/>
+  <xs:element name="Achievement" type="xs:string"/>
+  <xs:element name="Personal_Qualities" type="xs:string"/>
+  <xs:element name="Hobby" type="xs:string"/>
+  <xs:element name="Reference" type="xs:string"/>
+</xs:schema>
+<!-- end of xml schema -->
+<CV>
+	<Personal_Details>
+		<email>iqraakbar166@gmail.com </email>
+		<phone>+923003220365</phone>
+		<address>Qasimabad hyderabad</address>
+	</Personal_Details>
+	<Objective>Self-motivated and hardworking fresher seeking  an opportunity to work in a challenging environment to prove my skills and utilize my knowledge and intelligence in the growth of the organization.</Objective>
+	<Education>
+		<current>·	Bachelor’s degree in Software Engineering from Mehran University of Engineering and Technology Jamshoro ,Sindh  with aggregate 65.90% in 2019 </current>
+		<previous>·	HSC from Government Girls College Naushahroferoz ,Board with aggregate 77.86% in 2015.
+                	Oxford high school qasimabad,Sindh Board with aggregate 84% in 2013.</previous>
+	</Education>
+	<Work_Experience>Having not experience (Fresh Graduate)</Work_Experience>
+	<Skills>
+		<Computer_Skills>Oracle9i,DevC++, NetBeans, Notepad++, Android Studio, Proto.io, Microsoft Visual </Computer_Skills>
+	</Skills>
+	<Strength>Excellent communication skills ,Ability to grasp the new skills quickly. ,Hard-working ,Excellent knowledge and concepts on Core subjects.
+	</Strength>
+	<Achievement>Secured 1st position in HSC Board exams in City.</Achievement>
+	<Personal_Qualities>·	Hard-Worker
+·	Want to learn more</Personal_Qualities>
+	<Hobby> Like to play  Basketball, Tennis, Football, Cards</Hobby>
+    <Reference>Available for request.</Reference>
+</CV>
